@@ -48,13 +48,13 @@ spec:
               value: P@ssw0rd
             - name: MYSQL_DATABASE
               value: wordpress
-          volumeMounts:
-          - name: mysql-wordpress-persistent-storage
-            mountPath: /var/lib/mysql
-      volumes:
-      - name: mysql-wordpress-persistent-storage
-        persistentVolumeClaim:
-          claimName: mysql-wordpress-pv-claim
+      #     volumeMounts:
+      #     - name: mysql-wordpress-persistent-storage
+      #       mountPath: /var/lib/mysql
+      # volumes:
+      # - name: mysql-wordpress-persistent-storage
+      #   persistentVolumeClaim:
+      #     claimName: mysql-wordpress-pv-claim
 ---
 apiVersion: v1
 kind: Service

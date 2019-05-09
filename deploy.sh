@@ -2,7 +2,7 @@
 kubectl create -f local-volumes.yaml
 
 # Creating the secret
-kubectl create secret generic mysql-pass --from-literal=name=‘mysql-pass’ --from-literal=password=‘1qazXSW2’
+kubectl create secret generic mysql-pass --from-literal=name=‘mysql-pass’ --from-literal=password=‘P@ssw0rd’
 
 #### MySQL deployment ####
 #Master
