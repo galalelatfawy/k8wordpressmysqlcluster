@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pv-claim1
+  name: mysql-wordpress-pv-claim1
   labels:
     app: wordpress
 spec:
@@ -48,9 +48,9 @@ spec:
           - name: mysql-persistent-storage
             mountPath: /var/lib/mysql
       volumes:
-      - name: mysql-persistent-storage
+      - name: mysql-wordpress-persistent-storage1
         persistentVolumeClaim:
-          claimName: mysql-pv-claim1
+          claimName: mysql-wordpress-pv-claim1
 ---
 apiVersion: v1
 kind: Service
