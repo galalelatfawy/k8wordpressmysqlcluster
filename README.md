@@ -66,17 +66,17 @@ This creates MySQL master server. There are different environment variables whic
 ```sh
 env:
 - name: MYSQL_ROOT_PASSWORD
-  value: P@ssw0rd
+  value: 1qazXSW2
 - name: MYSQL_REPLICATION_MODE
   value: master
 - name: MYSQL_REPLICATION_USER
   value: wpcluster
 - name: MYSQL_REPLICATION_PASSWORD
-  value: P@ssw0rd
+  value: 1qazXSW2
 - name: MYSQL_USER
   value: wpuser
 - name: MYSQL_PASSWORD
-  value: P@ssw0rd
+  value: 1qazXSW2
 - name: MYSQL_DATABASE
   value: wordpress
 ```
@@ -91,11 +91,11 @@ env:
 - name: MYSQL_REPLICATION_USER
   value: wpcluster
 - name: MYSQL_REPLICATION_PASSWORD
-  value: P@ssw0rd
+  value: 1qazXSW2
 - name: MYSQL_MASTER_HOST
   value: mysql-master
 - name: MYSQL_MASTER_ROOT_PASSWORD
-  value: P@ssw0rd
+  value: 1qazXSW2
 ```
 - wordpress-deployment.yaml
 
@@ -110,7 +110,7 @@ env:
 - name: DB_USER
   value: wpuser
 - name: DB_PASSWORD
-  value: P@ssw0rd  
+  value: 1qazXSW2  
 
 #can be passed as secret from secretKeyRef  
 #- valueFrom:
